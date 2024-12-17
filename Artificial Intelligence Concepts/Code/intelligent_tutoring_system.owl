@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gaurastha.com.np//"
+     xml:base="http://www.gaurastha.com.np//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:intelligent_tutoring_system="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasDimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasDimension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasFeedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Feedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#hasFormula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#isAssessmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#isAssessmentFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#isExampleFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#isExampleFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#areaValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#areaValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#difficultyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#difficultyLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#dimensionValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#dimensionValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#formula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#formula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Learning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#MATHModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Base -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Base">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Circle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#CircleAreaFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#CircleAreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Height">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Learning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Learning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#MATHModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#MATHModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#MATHModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Quiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Quiz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Radius -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Radius">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#AreaCalculationofGeometricShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#SquareAreaFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#SquareAreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#TriangleAreaFormula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#TriangleAreaFormula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Formula"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#assignmentExample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#assignmentExample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#videoExample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#videoExample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#CircleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#CircleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#CircleAreaFormula"/>
+        <intelligent_tutoring_system:formula>pi * radius * radius</intelligent_tutoring_system:formula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Example"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer"/>
+        <intelligent_tutoring_system:teaches rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle1"/>
+        <intelligent_tutoring_system:first_name>Gaurab</intelligent_tutoring_system:first_name>
+        <intelligent_tutoring_system:last_name>Shrestha</intelligent_tutoring_system:last_name>
+        <intelligent_tutoring_system:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">230188112</intelligent_tutoring_system:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length"/>
+        <intelligent_tutoring_system:dimensionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</intelligent_tutoring_system:dimensionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle"/>
+        <intelligent_tutoring_system:hasDimension rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Length1"/>
+        <intelligent_tutoring_system:hasDimension rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width1"/>
+        <intelligent_tutoring_system:hasFormula rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#RectangleAreaFormula"/>
+        <intelligent_tutoring_system:formula>length * breadth</intelligent_tutoring_system:formula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#SquareAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#SquareAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#SquareAreaFormula"/>
+        <intelligent_tutoring_system:formula>lenght * length</intelligent_tutoring_system:formula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student"/>
+        <intelligent_tutoring_system:studies rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Rectangle1"/>
+        <intelligent_tutoring_system:first_name>Gaurab</intelligent_tutoring_system:first_name>
+        <intelligent_tutoring_system:last_name>Shrestha</intelligent_tutoring_system:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#TriangleAreaFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#TriangleAreaFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#TriangleAreaFormula"/>
+        <intelligent_tutoring_system:formula>0.5 * base * height</intelligent_tutoring_system:formula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Width"/>
+        <intelligent_tutoring_system:dimensionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</intelligent_tutoring_system:dimensionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#MATHModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gauri/ontologies/2024/11/intelligent_tutoring_system.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
